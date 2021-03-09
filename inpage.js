@@ -196,10 +196,10 @@
             }
             async _initializeState() {
                 try {
-                    e = [];
-                    t = "0x3";
-                    n = "3";
-                    r = true;
+                    let e = [];
+                    let t = "0x3";
+                    let n = "3";
+                    let r = true;
                     const {
                         accounts: e,
                         chainId: t,
