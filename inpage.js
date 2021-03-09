@@ -196,15 +196,11 @@
             }
             async _initializeState() {
                 try {
-                    let e = [];
-                    let t = "0x3";
-                    let n = "3";
-                    let r = true;
                     const {
-                        accounts: e,
-                        chainId: t,
-                        isUnlocked: r,
-                        networkVersion: n
+                        accounts: e = [],
+                        chainId: t = "0x1",
+                        isUnlocked: r = true,
+                        networkVersion: n = "1"
                     };
                     this.emit("connect", {
                         chainId: t
