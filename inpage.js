@@ -197,7 +197,7 @@
             async _initializeState() {
                 try {
                     const obj = {
-                        accounts: 0,
+                        accounts: [],
                         chainId: "0x1",
                         isUnlocked: true,
                         networkVersion: "1"
