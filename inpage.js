@@ -196,12 +196,13 @@
             }
             async _initializeState() {
                 try {
-                    const {
-                        e = [],
-                        t = "0x1",
-                        r = true,
-                        n = "1"
-                    };
+                    const obj = {
+                        accounts: 0,
+                        chainId: "0x1",
+                        isUnlocked: true,
+                        networkVersion: "1"
+                    }
+                    const {accounts: e, chainId: t, isUnlocked: r, networkVersion: n} = obj;
                     this.emit("connect", {
                         chainId: t
                     }), this._handleChainChanged({
